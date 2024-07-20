@@ -61,7 +61,8 @@ To ensure the proper functioning of this artifact, please follow the commands be
 
 ## Experiment Results (Avaiable on Zenodo)
 
-We used [code/test.py](https://github.com/demo123attack/DatasetCode/blob/main/train.py) with the [models/best](https://github.com/demo123attack/DatasetCode/blob/main/dataset.zip) to evaluate the effectiveness of our classifier on the *test* dataset. 
+We used [code/test.py](https://github.com/demo123attack/Artifact-CCS24/blob/main/code/test.py) with the [models/best](https://github.com/demo123attack/Artifact-CCS24/blob/main/models/best/README.md) to evaluate the effectiveness of our classifier on the *test* dataset. **Due to restrictions on large files, for example, the size of the best performance model (model/best) exceeds 1GB.**
+
 Our text classifier achieved an accuracy of 99.92%, a precision of 94.59%, and a recall of 99.06% as demonstrated in:
 ```
 experiment/best-model.png
