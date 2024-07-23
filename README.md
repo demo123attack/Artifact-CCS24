@@ -33,7 +33,9 @@ The following is a brief introduction to the directory structure of this artifac
     - Test_Dataset.csv            ; the test dataset used for testing
 - experiment/
     - best-model.png              ; the result of our classifier on the test dataset
-    
+- papers/
+    - artifact.pdf                ; the artifact appendix
+    - CCS24_camera_ready.pdf      ; our camera ready version paper
 - setup/                          ; enviroment setup files
 - README.md                       ; instructions of this artifact
 ```
