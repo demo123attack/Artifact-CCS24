@@ -5,7 +5,7 @@ import tensorflow_hub as hub
 import sys
 sys.path.append('models')
 from official.nlp.data import classifier_data_lib
-from official.nlp.bert import tokenization
+from official.nlp.tools import tokenization
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import KFold
