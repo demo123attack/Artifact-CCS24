@@ -43,7 +43,7 @@ The following is a brief introduction to the directory structure of this artifac
 
 The architecture of our model is illustrated in the following picture:
 
-![image](https://github.com/demo123attack/Artifact-CCS24/blob/main/models/model.png){:height="80%" width="80%"}
+![image](https://github.com/demo123attack/Artifact-CCS24/blob/main/models/model.png)
 
 ## Environment Setup
 > This implementation has been successfully tested on Windows 11 with Python 3.7.16 and TensorFlow 2.9.3, utilizing an NVIDIA GeForce RTX 3070 Ti Laptop GPU 8GB, a 12th Gen Intel(R) Core(TM) i7-12700H processor, and 16GB of RAM. For optimal performance, we recommend using GPU acceleration (e.g., NVIDIA GeForce RTX 3070 Ti Laptop GPU 8GB). If you choose to use GPU acceleration on Windows, please install the necessary components by following the `setup/requirements_windows_gpu.txt` file.
@@ -72,9 +72,9 @@ To ensure the proper functioning of this artifact, please follow the commands be
 We used [code/test.py](https://github.com/demo123attack/Artifact-CCS24/blob/main/code/test.py) with the [models/best](https://github.com/demo123attack/Artifact-CCS24/blob/main/models/best/README.md) to evaluate the effectiveness of our classifier on the *test* dataset. **Some files in this GitHub repository are incomplete. Due to constraints on file size, such as the best performing model (models/best) exceeding 1GB, please download the complete files from Zenodo.**
 
 Our text classifier achieved an accuracy of 99.92%, a precision of 94.59%, and a recall of 99.06% as demonstrated in:
-```
-experiment/best-model.png
-```
+
+![image](https://github.com/demo123attack/Artifact-CCS24/blob/main/experiment/best-model.png)
+
 
 ## Important Notes for AEC Review
 
