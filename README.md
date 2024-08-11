@@ -39,9 +39,14 @@ The following is a brief introduction to the directory structure of this artifac
 - setup/                          ; enviroment setup files
 - README.md                       ; instructions of this artifact
 ```
+## Model Architecture 
+
+The architecture of our model is illustrated in the following picture:
+
+![image](https://github.com/demo123attack/Artifact-CCS24/blob/main/models/model.png){:height="80%" width="80%"}
 
 ## Environment Setup
-> This implementation has been successfully tested on Windows 11 using Python 3.7.16 and TensorFlow 2.9.3. For optimal performance, we recommend running this artifact with GPU acceleration.
+> This implementation has been successfully tested on Windows 11 with Python 3.7.16 and TensorFlow 2.9.3, utilizing an NVIDIA GeForce RTX 3070 Ti Laptop GPU 8GB, a 12th Gen Intel(R) Core(TM) i7-12700H processor, and 16GB of RAM. For optimal performance, we recommend using GPU acceleration (e.g., NVIDIA GeForce RTX 3070 Ti Laptop GPU 8GB). If you choose to use GPU acceleration on Windows, please install the necessary components by following the `setup/requirements_windows_gpu.txt` file.
 
 To ensure the proper functioning of this artifact, please follow the commands belows:
 1. Please ensure that `conda` is installed on your system. If `conda` is not already installed, we recommend installing it as part of the Anaconda distribution or Miniconda.
@@ -59,7 +64,8 @@ To ensure the proper functioning of this artifact, please follow the commands be
    ```
    pip install -r setup/requirements.txt
    ```
-   This command instructs pip to install all packages listed in the requirements.txt file.
+   This command instructs pip to install all packages listed in the setup/requirements.txt file.
+> If you choose to use GPU acceleration on Windows, please install the necessary components by running `pip install -r setup/requirements_windows_gpu.txt`.
 
 ## Experiment Results (Avaiable on Zenodo)
 
@@ -80,14 +86,14 @@ This artifact will be uploaded to Zenodo and made public on GitHub.
 
 ### 2. Artifacts Evaluated
 
-To train our classifier, please run `code/train.py`, which which utilizes 5-fold cross-validation on the *Ground truth* dataset and saves our models in the `models/results/` folder. 
+To train our classifier, please run `code/train_test.py`, which which utilizes 5-fold cross-validation on the *Ground truth* dataset and saves our models in the `models/results/` folder. 
 ```
-python train.py
+python train_test.py --train
 ```
 
-To evaluate the effectiveness of our classifier, please run `code/test.py`, the results are displayed in `experiment/best-model.png`.
+To evaluate the effectiveness of our classifier, please run `code/train_test.py`, the results are displayed in `experiment/best-model.png`.
 ```
-python test.py
+python train_test.py --test
 ```
 
 ### 3. Results Reproduced
