@@ -23,21 +23,23 @@ The following is a brief introduction to the directory structure of this artifac
 
 ```
 - code/
-    - train.py                    ; code of training our text classifier with BERT on the ground truth dataset
-    - test.py                     ; code of testing our text classifier on the test dataset
+    - train_test.py                   ; the code for training our text classifier with BERT on the ground truth dataset, as well as the code for testing the classifier on the test dataset
 - models/
-    - results                     ; the folder for saving model used in train.py
-    - best                        ; the best performance model used in test.py
+    - results                         ; the folder for saving model used in train_test.py
+    - best                            ; the best performance model used in train_test.py
+    - model.png                       ; the figure of our model's architecture
 - dataset/
-    - Ground_Truth_Dataset.csv    ; the ground truth dataset used for training
-    - Test_Dataset.csv            ; the test dataset used for testing
+    - Ground_Truth_Dataset.csv        ; the ground truth dataset used for training
+    - Test_Dataset.csv                ; the test dataset used for testing
 - experiment/
-    - best-model.png              ; the result of our classifier on the test dataset
+    - best-model.png                  ; the result of our classifier on the test dataset
 - papers/
-    - artifact.pdf                ; the artifact appendix
-    - CCS24_camera_ready.pdf      ; our camera ready version paper
-- setup/                          ; enviroment setup files
-- README.md                       ; instructions of this artifact
+    - artifact.pdf                    ; the artifact appendix
+    - CCS24_camera_ready.pdf          ; our camera ready version paper
+- setup/
+    - requirements.txt                ; enviroment setup file
+    - requirements_windows_gpu.txt    ; enviroment setup file for windows gpu
+- README.md                           ; instructions of this artifact
 ```
 ## Model Architecture 
 
